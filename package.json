@@ -1,0 +1,16 @@
+{
+  "name": "watchimon",
+  "version": "0.1.0",
+  "description": "Render imon chart as png",
+  "main": "main.coffee",
+  "dependencies": {
+    "phantom": "^0.7.1",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
