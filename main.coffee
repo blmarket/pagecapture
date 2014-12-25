@@ -28,11 +28,14 @@ capture_image = (url, selector, file='target.png', callback) ->
             return
           , selector)
           return
-        1000)
+        5000)
         return
       return
     return
   return
+
+url = 'http://blackhand.linecorp.com/#/dashboard/db/generated-charts'
+selector = '.main-view-container'
 
 capture_image url, selector, 'target.png', ->
   console.log arguments
