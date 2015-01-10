@@ -8,8 +8,9 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Commands
 RUN \
+  echo "103.22.220.133 http.debian.net" >> /etc/hosts && \
   apt-get update && \
-  apt-get install -y wget libfreetype6 libfontconfig bzip2
+  apt-get install -y --force-yes wget libfreetype6 libfontconfig bzip2
 
 RUN \
   mkdir -p /srv/var && \
